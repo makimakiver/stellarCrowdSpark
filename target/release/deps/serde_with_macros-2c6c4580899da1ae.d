@@ -1,0 +1,8 @@
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/release/deps/libserde_with_macros-2c6c4580899da1ae.dylib: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/apply.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lazy_bool.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/utils.rs
+
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/release/deps/serde_with_macros-2c6c4580899da1ae.d: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/apply.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lazy_bool.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/utils.rs
+
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lib.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/apply.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/lazy_bool.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_with_macros-3.11.0/src/utils.rs:

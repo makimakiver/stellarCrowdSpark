@@ -1,0 +1,2 @@
+cargo:rustc-env=RUSTC_VERSION=1.81.0
+cargo:rustc-env=GIT_REVISION=c6cca8f8cf75618c24ceb5d9ffdfe735486ae1e9
