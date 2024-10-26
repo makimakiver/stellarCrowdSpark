@@ -9,7 +9,7 @@ pub struct CrowdfundingContract;
 pub struct CrowdfundingState {
     pub balance: u32,
     pub target: u32,
-    pub duration: Timepoint,
+    // pub duration: Timepoint,
 }
 
 #[contracterror]
