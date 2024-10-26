@@ -1,0 +1,1 @@
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/wasm32-unknown-unknown/release/crowfunding.wasm: /Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/contracts/crowfunding/src/lib.rs /Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/contracts/crowfunding/src/test.rs

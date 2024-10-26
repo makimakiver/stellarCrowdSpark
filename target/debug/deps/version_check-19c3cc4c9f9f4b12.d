@@ -1,0 +1,10 @@
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/debug/deps/libversion_check-19c3cc4c9f9f4b12.rmeta: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/version.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/channel.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/date.rs
+
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/debug/deps/libversion_check-19c3cc4c9f9f4b12.rlib: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/version.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/channel.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/date.rs
+
+/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/debug/deps/version_check-19c3cc4c9f9f4b12.d: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/version.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/channel.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/date.rs
+
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/lib.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/version.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/channel.rs:
+/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.5/src/date.rs:
