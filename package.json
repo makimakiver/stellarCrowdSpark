@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "init": "node initialize.js",
-    "dev": "npm run init && astro dev",
-    "start": "npm run init && astro dev",
+    "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -15,7 +15,7 @@
     "@creit.tech/stellar-wallets-kit": "^1.2.3",
     "astro": "^4.2.4",
     "typescript": "^5.3.3",
-     "crowdfunding": "./packages/crowdfunding"
+    "crowdfunding": "./packages/crowdfunding"
   },
   "workspaces": [
     "packages/*"
