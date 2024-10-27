@@ -1,25 +1,56 @@
 ---
-import Card from '../components/Card.astro'
-import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-
 <Layout title="Welcome to Astro.">
-    <div style="background-image: url('https://images.unsplash.com/photo-1663082075814-60439de1cf13?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c21hbGwlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D'); height: 100vh; background-size: cover; background-position: center; display: flex; justify-content: center;align-items: center;">
-     <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 1%; padding-left: 2%; padding-right: 2%;">
-      <Card title="SITI" src='https://images.unsplash.com/photo-1475738278104-aff5ab463b1e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2xkJTIwbGFkeXxlbnwwfHwwfHx8MA%3D%3D'>
-        <p class="card-text">"I've lived in this little village all my life. When my husband passed, I had to find a way to care for my young children. I started roasting nuts, using a recipe passed down through generations. Soon, people were drawn to the delicious smell and flavor. Now,i am looking forward to open a small shop."</p>
-</Card>
-<Card title='KENJI' src='https://images.unsplash.com/photo-1533578733369-7219f1c25560?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29ya2luZyUyMG9sZCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D'>
-      <p class="card-text">"My name is Kenji and I’ve worked in this welding shop for over fifteen years. After my father’s passing, I felt the need to support my family. I dreamt of starting my own fabrication business, crafting custom metal pieces. With every project, I poured my heart into my work and i want to open my own workshop to grow in this business."
-      </p>
-    </Card>
-    <Card title="BOB" src=https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YSUyMG1hbiUyMHdvcmtpbmclMjBhcyUyMGElMjBjYXJwZW50ZXJ8ZW58MHx8MHx8fDA%3D>
-      <p class="card-text">"I’ve always found joy in working with wood in my cramped garage, crafting everything from sturdy shelves to toys for my kids. But with bills piling up and two children to support, I feel the financial pressure weighing heavily on me. I dream of opening a proper workshop to expand my business and secure a better future for my family."</p>
-    </Card>
+  <div
+    style="background-image: url('https://images.unsplash.com/photo-1663082075814-60439de1cf13?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c21hbGwlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D'); height: 100vh; background-size: cover; background-position: center; display: flex; justify-content: center;align-items: center;"
+  >
+    <div
+      class="row row-cols-1 row-cols-md-3 g-4"
+      style="padding-top: 1%; padding-left: 2%; padding-right: 2%;"
+    >
+      <Card
+        crowdfundingId="111"
+        title="SITI"
+        src="https://images.unsplash.com/photo-1475738278104-aff5ab463b1e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2xkJTIwbGFkeXxlbnwwfHwwfHx8MA%3D%3D"
+      >
+        <p class="card-text">
+          "I've lived in this little village all my life. When my husband
+          passed, I had to find a way to care for my young children. I started
+          roasting nuts, using a recipe passed down through generations. Soon,
+          people were drawn to the delicious smell and flavor. Now,i am looking
+          forward to open a small shop."
+        </p>
+      </Card>
+      <Card
+        crowdfundingId="222"
+        title="KENJI"
+        src="https://images.unsplash.com/photo-1533578733369-7219f1c25560?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29ya2luZyUyMG9sZCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+      >
+        <p class="card-text">
+          "My name is Kenji and I’ve worked in this welding shop for over
+          fifteen years. After my father’s passing, I felt the need to support
+          my family. I dreamt of starting my own fabrication business, crafting
+          custom metal pieces. With every project, I poured my heart into my
+          work and i want to open my own workshop to grow in this business."
+        </p>
+      </Card>
+      <Card
+        crowdfundingId="333"
+        title="BOB"
+        src="https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YSUyMG1hbiUyMHdvcmtpbmclMjBhcyUyMGElMjBjYXJwZW50ZXJ8ZW58MHx8MHx8fDA%3D"
+      >
+        <p class="card-text">
+          "I’ve always found joy in working with wood in my cramped garage,
+          crafting everything from sturdy shelves to toys for my kids. But with
+          bills piling up and two children to support, I feel the financial
+          pressure weighing heavily on me. I dream of opening a proper workshop
+          to expand my business and secure a better future for my family."
+        </p>
+      </Card>
     </div>
-    </div>
-    <div>
-        
-    </div>
+  </div>
+  <div></div>
 </Layout>
