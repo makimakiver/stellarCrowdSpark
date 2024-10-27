@@ -23,7 +23,6 @@ fn test_init() {
         li.timestamp = current_time;
     });
     let user = Address::generate(&env);
-    // let token_address = native_asset_contract_address(&env);
     let (_token_client,sac_client) = create_token_contract(&env,&user);
     let token_address = sac_client.address;  
 
@@ -36,4 +35,26 @@ fn test_init() {
         result,
         ()
     );
+}
+
+
+
+#[test]
+fn test_init_wrong_deadline() {
+    let env = Env::default();
+    env.mock_all_auths();
+    let current_time = 12345;
+    env.ledger().with_mut(|li| {
+        li.timestamp = current_time;
+    });
+    let user = Address::generate(&env);
+    let (_token_client,sac_client) = create_token_contract(&env,&user);
+    let token_address = sac_client.address;  
+
+    let contract_id = env.register_contract(None, CrowdfundingContract);
+    let client = CrowdfundingContractClient::new(&env, &contract_id);
+    let crowd_id = 1;
+    let name = String::from_str(&env,"test");
+    let result = client.try_create_crowdfunding(&token_address,&user,&crowd_id,&100, &name, &(current_time-1));
+    assert_eq!(result, Err(Ok(Error::InvalidDeadline)));
 }
