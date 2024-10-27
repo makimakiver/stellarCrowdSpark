@@ -1,4 +1,6 @@
 ---
+import ConnectWallet from '../components/ConnectWallet.astro';
+
 interface Props {
 	title: string;
 }
@@ -35,10 +37,7 @@ const { title } = Astro.props;
 				<div class="d-flex align-items-center">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<div id="connect-wrap" class="wrap" aria-live="polite">
-								<div class="ellipsis">
-							<button data-connect aria-controls="connect-wrap" class="btn btn-success"">Connect</button>
-						</div>
+							<ConnectWallet />
 						</li>
 					</ul>
 					<form class="d-flex ms-3" role="search">
@@ -52,37 +51,3 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
-<script>
-	import { kit, setPublicKey } from "../stellar-wallets-kit";
-	import ConnectWallet from '../components/Card.astro'
-	const ellipsis = document.querySelector("#connect-wrap .ellipsis");
-	const button = document.querySelector("[data-connect]");
-  
-	async function setLoggedIn(publicKey: string) {
-	  ellipsis.innerHTML = `Signed in as ${publicKey}`;
-	  ellipsis.title = publicKey;
-	}
-  
-	button.addEventListener("click", async () => {
-	  button.disabled = true;
-  
-	  try {
-		await kit.openModal({
-		  onWalletSelected: async (option) => {
-			try {
-			  kit.setWallet(option.id);
-			  const { address } = await kit.getAddress();
-			  setPublicKey(address);
-			  await setLoggedIn(address);
-			} catch (e) {
-			  console.error(e);
-			}
-		  },
-		});
-	  } catch (e) {
-		console.error(e);
-	  }
-  
-	  button.disabled = false;
-	});
-  </script>

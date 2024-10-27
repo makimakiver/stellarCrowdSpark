@@ -1,4 +1,6 @@
 ---
+import Donate from './Donate.astro';
+
 interface Props {
 	title?: string;
   src:string;
@@ -15,7 +17,8 @@ const {title,src} = Astro.props;
 				<slot />
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-success btn-lg d-flex justify-content-center">Donate</a>
+                 <Donate />
+                <!-- <a href="#" class="btn btn-success btn-lg d-flex justify-content-center">Donate 25$</a> -->
             </div>
           </div>
 

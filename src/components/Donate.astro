@@ -1,0 +1,64 @@
+---
+// interface Props{ 
+//     crowdfundingId: string;
+// }
+
+// const { crowdfundingId } = Astro.props;
+---
+
+<div style=" align-items: center;" class="d-flex flex-column justify-content-center">
+  <div>
+Current value: <strong id="current-value" aria-live="polite">0</strong> $<br />
+</div>
+<button data-increment aria-controls="current-value" class="btn btn-success btn-lg d-flex justify-content-center">Donate 20$</button>
+</div>
+<script>
+  import { kit, loadedPublicKey } from "../stellar-wallets-kit";
+  import crowdfunding from "../contracts/crowdfunding";
+  
+  const button = document.querySelector("[data-increment]");
+  const currentValue = document.querySelector("#current-value");
+
+  const tx_balance = await crowdfunding.get_balance({crowdfund_id: 111}) 
+  const {result} = await tx_balance.simulate();
+  console.log(result.toString());
+  
+  currentValue.innerHTML = result;
+
+  button.addEventListener("click", async () => {
+    const publicKey = loadedPublicKey();
+
+    if (!publicKey) {
+      alert("Please connect your wallet first");
+      return;
+    } else {
+      crowdfunding.options.publicKey = publicKey;
+    }
+
+    button.disabled = true;
+    button.classList.add("loading");
+    currentValue.innerHTML =
+      currentValue.innerHTML +
+      '<span class="visually-hidden"> – updating…</span>';
+
+      const amount = BigInt(25);
+      const tx = await crowdfunding.donate({sender:publicKey, amount: amount, crowdfund_id: 111}) // sender // amount: i128  // crowdfund_id: u32;
+    try {
+      await tx.signAndSend({
+        signTransaction: async (xdr) => {
+          const { signedTxXdr } = await kit.signTransaction(xdr);
+          return signedTxXdr;
+        },
+      });
+      const tx_balance = await crowdfunding.get_balance({crowdfund_id: 111}) 
+      // Only use `innerHTML` with contract values you trust!
+      // Blindly using values from an untrusted contract opens your users to script injection attacks!
+      currentValue.innerHTML = tx_balance.toString();
+    } catch (e) {
+      console.error(e);
+    }
+
+    button.disabled = false;
+    button.classList.remove("loading");
+  });
+</script>

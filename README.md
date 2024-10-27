@@ -1,7 +1,29 @@
 # Soroban Project
-erere
-gg
-ttyt
+
+## Addresses (testnet)
+### Our contract 
+CBMILZWCHO5R5ZSYPQI2P3H2ZMLLMKG4HBWPEKURGQAZRELZCTF52PSZ
+### Contract address for the native token
+CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC
+
+## Create a crowdfunding (not yet implemented on frontend):
+
+```
+stellar contract invoke --id CBMILZWCHO5R5ZSYPQI2P3H2ZMLLMKG4HBWPEKURGQAZRELZCTF52PSZ\
+  --source alice \
+  --network testnet \
+  -- \
+  create_crowdfunding --token CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC\
+  --crowdfund_id 111 --user <($stellar keys address alice)> --name 'test' --target_price 100 --deadline <unix in seconds>
+```
+
+stellar contract invoke --id CBMILZWCHO5R5ZSYPQI2P3H2ZMLLMKG4HBWPEKURGQAZRELZCTF52PSZ\
+  --source alice \
+  --network testnet \
+  -- \
+  create_crowdfunding --token CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC\
+  --crowdfund_id 111 --user GD63TY2WYF7PQG6K7IHZ4T2LN4F3G5DRFBTPQ6BOF7SAHZP6VWCGTMUQ --name 'test' --target_price 100 --deadline 1730049354
+
 ## Project Structure
 
 This repository uses the recommended structure for a Soroban project:
