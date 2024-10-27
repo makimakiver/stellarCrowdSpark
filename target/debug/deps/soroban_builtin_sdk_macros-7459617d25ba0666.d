@@ -1,7 +1,0 @@
-/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/debug/deps/libsoroban_builtin_sdk_macros-7459617d25ba0666.dylib: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_fn.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_type.rs
-
-/Users/nicolasbeaudouin/Documents/learning/Stellar/frontend/target/debug/deps/soroban_builtin_sdk_macros-7459617d25ba0666.d: /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/lib.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_fn.rs /Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_type.rs
-
-/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/lib.rs:
-/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_fn.rs:
-/Users/nicolasbeaudouin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/soroban-builtin-sdk-macros-21.2.1/src/derive_type.rs:
