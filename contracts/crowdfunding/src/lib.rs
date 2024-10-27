@@ -25,6 +25,7 @@ pub enum Error {
     InvalidDeadline = 1,
     CrowfundingAlreadyClosed = 2,
     CrowfundingStillOpen = 3,
+    OwnerCannotDonate = 4,
 }
 
 #[contractimpl]
@@ -70,6 +71,9 @@ impl CrowdfundingContract {
         sender.require_auth();
         let mut crowdfunding: CrowdfundingState =
             env.storage().persistent().get(&crowdfund_id).unwrap();
+        if sender == crowdfunding.owner {
+            return Err(Error::OwnerCannotDonate);
+        }
         let ledger_timestamp = env.ledger().timestamp();
         if ledger_timestamp > crowdfunding.deadline {
             return Err(Error::CrowfundingAlreadyClosed);
@@ -125,6 +129,37 @@ impl CrowdfundingContract {
             return Ok(());
         }
     }
+
+
+    // View functions
+
+    pub fn get_contribution(env: Env, crowdfund_id: u32, user: Address) -> i128 {
+        let crowdfunding: CrowdfundingState =
+            env.storage().persistent().get(&crowdfund_id).unwrap();
+        if let Some(value) = crowdfunding.contributions.get(user) {
+            return value;
+        }
+        return 0;
+    }
+
+    pub fn get_balance(env: Env, crowdfund_id: u32) -> i128 {
+        let crowdfunding: CrowdfundingState =
+            env.storage().persistent().get(&crowdfund_id).unwrap();
+        return crowdfunding.balance;
+    }
+
+    pub fn get_crowfunding_data(env: Env, crowdfund_id: u32) -> (Address, i128, String, u64, Address){
+        let crowdfunding: CrowdfundingState =
+            env.storage().persistent().get(&crowdfund_id).unwrap();
+        return (crowdfunding.owner, crowdfunding.target_price, crowdfunding.name, crowdfunding.deadline, crowdfunding.token);
+    }
+
+    pub fn get_full_crowfunding_information(env: Env, crowdfund_id: u32) -> CrowdfundingState {
+        let crowdfunding: CrowdfundingState =
+            env.storage().persistent().get(&crowdfund_id).unwrap();
+        return crowdfunding;
+    }
+
 }
 
 mod test;
