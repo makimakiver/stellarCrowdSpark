@@ -2,6 +2,10 @@
 
 ## About 
 
+### Short Presentation
+
+### Explanation on the use of Stellar
+
 ## Addresses (testnet)
 ### Our contract 
 CBMILZWCHO5R5ZSYPQI2P3H2ZMLLMKG4HBWPEKURGQAZRELZCTF52PSZ
