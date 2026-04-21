@@ -72,3 +72,9 @@ stellar contract invoke --id CBMILZWCHO5R5ZSYPQI2P3H2ZMLLMKG4HBWPEKURGQAZRELZCTF
 ## Note: 
 
 A lot of functionnalities are unfinished and there are much more to do.
+
+##Project created by 
+Nicolas Beaudouin
+Simranpreet
+Yutaka
+
